@@ -7,7 +7,7 @@ public class Compute {
 	public static String compute(String expression) {
 		Expression express=new ExpressionBuilder(expression).build();
 		double result=express.evaluate();
-		String answer=String.format("%.2f", result);
+		String answer=String.format("%f", result);
 		return answer;
 	}
 }
